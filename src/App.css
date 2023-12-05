@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  background-color: rgb(231, 235, 225);
+  color: black;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
 }
-
-.App-link {
-  color: #61dafb;
+.text{
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form input{
+  width: 60px;
+  height: 60px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin: 3px;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+form .line1 .dot{
+  font-weight: bold;
+  font-size: 16px;
+}
+form input[type='button']:hover{
+  background-color: rgb(2, 75, 75);
+}
+.search{
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  margin: 5px 0px 8px 0px ;
+}
+.search input{
+  text-align: right;
+  flex: 1;
+  box-shadow: inset 5px 5px 3px teal,inset -5px -5px 3px teal;
+  font-size: 35px;
+  padding: 3px 10px;
+}
+form .equal{
+  width: 124px;
 }
